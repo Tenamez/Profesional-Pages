@@ -3,26 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página Web</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Portafolio
+
+    </title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: #333;
+        background-color: #e70707;
+    }
+
+    body {
+    display: flex;
+    justify-content: auto; /* Centra el logo en la cabecera */
+    align-items: auto; /* Centra el logo verticalmente si hay otros elementos */
+    padding: autopx; /* Añade algo de espacio alrededor del contenido de la cabecera */
+    background-color: #f3f3f3; /* Un color de fondo, si lo deseas */
+}
+
+.logo {
+    width: autopx; /* Ajusta esto según el tamaño deseado para tu logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    header {
+        background: #000303;
+        color: #ffffff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    header h1, header h2 {
+        text-align: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 12px 20px;
+        margin: 0 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    nav a:hover, nav a:focus {
+        background-color: #00ff44;
+    }
+
+    .main-content, .intro, .experience, .projects, .contact {
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #d707d4;
+        border-bottom: 2px solid #4aa30b;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+
+    .bio p, .experience-list li, .project-item, .contact-info li {
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+
+    .experience-list li, .project-item {
+        background-color: #f4f4f4;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .contact-info {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .contact-info li {
+        background-color: transparent;
+        padding: 5px 0;
+    }
+
+    .contact-info a {
+        color: #005691;
+        text-decoration: none;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Página Web</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Sección Principal</h2>
-        <p>Este es un párrafo de ejemplo para mostrar cómo se ve el texto en tu página web.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Mi Sitio Web</p>
-    </footer>
+    <img src="https://scontent.fgdl3-1.fna.fbcdn.net/v/t39.30808-6/405280756_7312463282117724_6489243610382577797_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF0wU2RQf429mAHmlQFUNyRluyzLEfHVcKW7LMsR8dVwn4FnzyaEgWkOZ-zzCVIVUQ9d_ZP7dT5ncfYFtFMkqLZ&_nc_ohc=OV2tLE3QMSQAb4iuk1C&_nc_ht=scontent.fgdl3-1.fna&oh=00_AfAm6Y3XgiPPObKXLiwgyXgo8Tqy-1yxtaIzJhjQlqoqCA&oe=661B2778" alt="Descripción de la imagen" class="logo">
+    <div class="container">
+        <header>
+            <h1> Luis Eduardo Patiño Martinez</h1>
+            <h2>Portafolio Personal</h2>
+            <nav>
+                <a href="#intro">Inicio</a>
+                <a href="#experience">Experiencia</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </header>
+
+        <div class="intro" id="intro">
+            <h2>Sobre Mí</h2>
+            <p class="bio">
+                [Aquí va tu biografía. Habla sobre quién eres, qué haces, y tus intereses o pasiones.]
+            </p>
+        </div>
+        <div class="experience" id="experience">
+            <h2>Experiencia</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>Posición / Rol - Empresa</strong> [Fecha de inicio - Fecha de fin]
+                    <p>Descripción breve de tus responsabilidades y logros.</p>
+                </li>
+                <!-- Repite el elemento li según sea necesario -->
+            </ul>
+        </div>
+        <div class="projects" id="projects">
+            <h2>Proyectos</h2>
+            <ul class="project-list">
+                <li class="project-item">
+                    <strong>Nombre del Proyecto</strong>
+                    <p>Descripción breve del proyecto. No olvides incluir tecnologías usadas.</p>
+                </li>
+                <!-- Repite para otros proyectos -->
+            </ul>
+        </div>
+        <div class="contact" id="contact">
+            <h2>Contacto</h2>
+            <ul class="contact-info">
+                <li>Email: sonicluis1@gmail.com
+                <li>LinkedIn: [Tu LinkedIn]>
+                <!-- Añade otras redes sociales o métodos de contacto si lo deseas -->
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
